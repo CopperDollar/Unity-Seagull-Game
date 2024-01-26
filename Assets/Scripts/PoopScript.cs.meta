@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5a8487fb0f22abf43bfed59fdf1d43f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - poopMeter: {instanceID: 0}
+  - poop: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+  - seagull: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
+  - poopClone: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+  - myRigidbody: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
