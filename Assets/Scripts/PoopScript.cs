@@ -56,12 +56,11 @@ public class PoopScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
 
-            //if (!poopInstantiated)
-            //{
+
                 Poop();
                 //poopInstantiated = true;
 
-            //}
+            
 
             DecreasePoop();
             SetPoopAmount();
