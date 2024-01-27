@@ -6,6 +6,7 @@ using UnityEngine.XR;
 using UnityEngine.UI;
 using System;
 using Unity.VisualScripting;
+using System.Reflection;
 
 
 
@@ -21,13 +22,11 @@ public class PoopScript : MonoBehaviour
     public Rigidbody2D myRigidbody;
 
 
+    public List<GameObject> poopList = new List<GameObject>();
     public int maxPoop;
     public int currentPoop;
     public bool poopInstantiated = false;
     public float deadZone = -3;
-
-
-
 
 
 
@@ -45,8 +44,6 @@ public class PoopScript : MonoBehaviour
       
 
 
-
-
     }
 
 
@@ -56,10 +53,8 @@ public class PoopScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
 
-
                 Poop();
-                //poopInstantiated = true;
-
+                poopList.Add(newPoop);
             
 
             DecreasePoop();
@@ -67,15 +62,17 @@ public class PoopScript : MonoBehaviour
 
             }
 
+        for (int i = 0; i < poopList.Count; i++)
+        //if (newPoop != null && newPoop.transform.position.y < deadZone)
+        {
 
-        if (newPoop != null && newPoop.transform.position.y < deadZone)
-        { 
-            DestroyPoop();
-            //poopInstantiated = false;
+            if (poopList[i] != null && poopList[i].transform.position.y < deadZone)
+            {
+                DestroyPoop(i);
+            }
+            
         }
-                
-        
-        
+                  
 
     }
 
@@ -87,7 +84,6 @@ public class PoopScript : MonoBehaviour
  
         poopMeter.value = Convert.ToInt32(currentPoop);
 
-
     }
 
 
@@ -96,7 +92,7 @@ public class PoopScript : MonoBehaviour
         Vector3 spawnPosition = seagull.transform.position + new Vector3(-0.3f, -0.8f, 0);
         newPoop = Instantiate(poopPrefab, spawnPosition, Quaternion.identity);
         myRigidbody = newPoop.GetComponent<Rigidbody2D>();
-
+        
 
     }
 
@@ -107,9 +103,11 @@ public class PoopScript : MonoBehaviour
 
     }
 
-    public void DestroyPoop()
+    public void DestroyPoop(int index)
     {
-        Destroy(newPoop);
+        //Destroy(newPoop);
+        Destroy(poopList[index]);
+        poopList.RemoveAt(index);
 
     }
 
