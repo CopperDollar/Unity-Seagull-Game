@@ -15,7 +15,7 @@ public class PoopScript : MonoBehaviour
 {
 
 
-    public SeagullScript seagullScript;
+    //public SeagullScript seagullScript;
     public GameObject newPoop;
     public Rigidbody2D myRigidbody;
 
@@ -27,10 +27,11 @@ public class PoopScript : MonoBehaviour
     void Start()
     {
         SeagullScript seagullScript = GetComponent<SeagullScript>();
+
         if (seagullScript != null)
         {
+            Debug.Log("seagullScript löytyi");
             newPoop = seagullScript.newPoop;
-            //newPoop = GetComponent<SeagullScript>().newPoop;
         }
 
 
@@ -44,7 +45,7 @@ public class PoopScript : MonoBehaviour
         if (newPoop != null && newPoop.transform.position.y < deadZone)
         {
 
-            Destroy(gameObject);
+            Destroy(newPoop);
         }
 
 
