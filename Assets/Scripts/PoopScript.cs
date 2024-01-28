@@ -13,35 +13,25 @@ using System.Reflection;
 
 public class PoopScript : MonoBehaviour
 {
-    //public LogicScript logic;
 
-    public Slider poopMeter;
-    public GameObject poopPrefab;
-    public GameObject seagull;
+
+    public SeagullScript seagullScript;
     public GameObject newPoop;
     public Rigidbody2D myRigidbody;
 
 
-    public List<GameObject> poopList = new List<GameObject>();
-    public int maxPoop;
-    public int currentPoop;
-    public bool poopInstantiated = false;
-    public float deadZone = -3;
+    public float deadZone = -1;
 
 
 
     void Start()
     {
-        //logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-
-        seagull = GameObject.Find("Seagull");
-        poopPrefab = GameObject.Find("Poop");
-        //poopMeter = (Slider)FindObjectOfType(typeof(Slider));
-
-        poopMeter.maxValue = 20;
-        maxPoop = Convert.ToInt32(poopMeter.maxValue);
-        currentPoop = maxPoop;
-      
+        SeagullScript seagullScript = GetComponent<SeagullScript>();
+        if (seagullScript != null)
+        {
+            newPoop = seagullScript.newPoop;
+            //newPoop = GetComponent<SeagullScript>().newPoop;
+        }
 
 
     }
@@ -50,79 +40,18 @@ public class PoopScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.P))
+
+        if (newPoop != null && newPoop.transform.position.y < deadZone)
         {
 
-                Poop();
-                poopList.Add(newPoop);
-            
-
-            DecreasePoop();
-            SetPoopAmount();
-
-            }
-
-        for (int i = 0; i < poopList.Count; i++)
-        //if (newPoop != null && newPoop.transform.position.y < deadZone)
-        {
-
-            if (poopList[i] != null && poopList[i].transform.position.y < deadZone)
-            {
-                DestroyPoop(i);
-            }
-            
+            Destroy(gameObject);
         }
-                  
+
+
 
     }
 
 
-
-
-    public void SetPoopAmount()
-    {
- 
-        poopMeter.value = Convert.ToInt32(currentPoop);
-
-    }
-
-
-    public void Poop()
-    {
-        Vector3 spawnPosition = seagull.transform.position + new Vector3(-0.3f, -0.8f, 0);
-        newPoop = Instantiate(poopPrefab, spawnPosition, Quaternion.identity);
-        myRigidbody = newPoop.GetComponent<Rigidbody2D>();
-        
-
-    }
-
-
-    public void DecreasePoop()
-    {
-        currentPoop -= 1;
-
-    }
-
-    public void DestroyPoop(int index)
-    {
-        //Destroy(newPoop);
-        Destroy(poopList[index]);
-        poopList.RemoveAt(index);
-
-    }
-
-
-
-
-
-
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    // logic.addScore();
-
-    //}
 }
 
 

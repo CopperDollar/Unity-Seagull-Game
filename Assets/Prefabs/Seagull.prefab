@@ -48,6 +48,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 7309028303060020015}
+  seagull: {fileID: 809344920282002228}
+  poopPrefab: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+  newPoop: {fileID: 0}
+  poopMeter: {fileID: 0}
+  poopList: []
+  maxPoop: 0
+  currentPoop: 0
 --- !u!212 &6502221658065762426
 SpriteRenderer:
   m_ObjectHideFlags: 0

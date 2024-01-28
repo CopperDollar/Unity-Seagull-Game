@@ -26,7 +26,7 @@ public class PoopMeterScript : MonoBehaviour
     {
         maxValue = 15;
         PoopScript = GameObject.FindGameObjectWithTag("Poop").GetComponent<PoopScript>();
-        currentPoop = GetComponent<PoopScript>().currentPoop;
+        //currentPoop = GetComponent<PoopScript>().currentPoop;
     }
 
     void Update()

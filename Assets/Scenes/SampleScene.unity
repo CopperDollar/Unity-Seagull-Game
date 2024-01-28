@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 1053949449}
   m_Layer: 5
   m_Name: Poop Meter
-  m_TagString: Untagged
+  m_TagString: Poop Meter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
     - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: deadZone
-      value: -3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: poopClone
@@ -1590,6 +1590,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3954174224973229114, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
+      propertyPath: poopMeter
+      value: 
+      objectReference: {fileID: 1053949449}
     - target: {fileID: 6502221658065762426, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
       propertyPath: m_SortingOrder
       value: 1

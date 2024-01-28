@@ -131,14 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8487fb0f22abf43bfed59fdf1d43f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poopMeter: {fileID: 0}
-  poopPrefab: {fileID: 0}
-  seagull: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
   newPoop: {fileID: 0}
-  myRigidbody: {fileID: 0}
-  maxPoop: 0
-  currentPoop: 0
-  poopInstantiated: 0
+  myRigidbody: {fileID: 4785012990455359616}
   deadZone: -1
 --- !u!95 &4458899024974225388
 Animator:
