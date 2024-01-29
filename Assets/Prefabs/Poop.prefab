@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 3297477641138153397}
   - component: {fileID: 4458899024974225388}
   - component: {fileID: 4785012990455359616}
-  - component: {fileID: -6442474127364091673}
   m_Layer: 0
   m_Name: Poop
   m_TagString: Poop
@@ -183,22 +182,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6442474127364091673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9173154880264481952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 753f18f26bb609d459389d3217290de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 0}
-  seagull: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
-  poopPrefab: {fileID: 9173154880264481952}
-  newPoop: {fileID: 0}
-  poopMeter: {fileID: 0}
-  maxPoop: 0
-  currentPoop: 0
