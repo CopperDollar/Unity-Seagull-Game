@@ -31,7 +31,7 @@ public class PoopScript : MonoBehaviour
         if (seagullScript == null)
         {
             Debug.Log("seagullScrip not found");
-            newPoop = seagullScript.newPoop;
+  
         }
 
         if (seagullScript != null)
