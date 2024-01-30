@@ -7,8 +7,17 @@ using Random = System.Random;
 
 public class CharacterSpawnerScript : MonoBehaviour
 {
-    public GameObject character;
+    static List<GameObject> characterList = new List<GameObject>();
+    int characterListSize;
+   // public randomCharacter;
+    public GameObject redShirtBoy;
+    public GameObject messyHairBoy;
+    public GameObject redShirtChild;
+
+    public GameObject selectedCharacter;
+    
     Random randomNum = new Random();
+    System.Random randomCharacter = new System.Random();
 
     public int spawnRate;
     private float timer = 0;
@@ -20,8 +29,15 @@ public class CharacterSpawnerScript : MonoBehaviour
     void Start()
     {
 
-        spawnRate = randomNum.Next(3, 15);
-        spawnCharacter();
+        spawnRate = randomNum.Next(3, 5);
+        characterList.Add(messyHairBoy);
+        characterList.Add(redShirtBoy);
+        characterList.Add(redShirtChild);
+
+        characterListSize = characterList.Count;
+
+
+
     }
 
 
@@ -36,19 +52,25 @@ public class CharacterSpawnerScript : MonoBehaviour
         else
         {
 
-            spawnCharacter();
-            spawnRate = randomNum.Next(3, 15);
+            SpawnRandomCharacter();
+            spawnRate = randomNum.Next(3, 5);
             timer = 0;
         }
 
 
     }
-    void spawnCharacter()
+
+
+
+
+    void SpawnRandomCharacter()
     {
-
-        GameObject newCharacter = Instantiate(character, transform.position, transform.rotation);
-
+        int randomIndex = randomCharacter.Next(0, characterListSize);
+        selectedCharacter = characterList[randomIndex];
+        Instantiate(selectedCharacter, transform.position, transform.rotation);
     }
+
+
 
 
 }

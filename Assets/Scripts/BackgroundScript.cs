@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundScript : MonoBehaviour
 {
-    public float moveSpeed = 7;
+    public float moveSpeed = 6;
     
     
     void Start()
