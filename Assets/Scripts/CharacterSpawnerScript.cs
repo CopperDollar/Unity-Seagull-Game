@@ -13,6 +13,13 @@ public class CharacterSpawnerScript : MonoBehaviour
     public GameObject redShirtBoy;
     public GameObject messyHairBoy;
     public GameObject redShirtChild;
+    public GameObject blueShirtChild;
+    public GameObject blueShirtGirl;
+    public GameObject greyShirtBoy;
+    public GameObject pinkHairGirl;
+    public GameObject greenCapBoy;
+    public GameObject tuxedoMan;
+    public GameObject brownHairChild;
 
     public GameObject selectedCharacter;
     
@@ -33,6 +40,13 @@ public class CharacterSpawnerScript : MonoBehaviour
         characterList.Add(messyHairBoy);
         characterList.Add(redShirtBoy);
         characterList.Add(redShirtChild);
+        characterList.Add(blueShirtChild);
+        characterList.Add(blueShirtGirl);
+        characterList.Add(greyShirtBoy);
+        characterList.Add(pinkHairGirl);
+        characterList.Add(greenCapBoy);
+        characterList.Add(tuxedoMan);
+        characterList.Add(brownHairChild);
 
         characterListSize = characterList.Count;
 
@@ -53,7 +67,7 @@ public class CharacterSpawnerScript : MonoBehaviour
         {
 
             SpawnRandomCharacter();
-            spawnRate = randomNum.Next(3, 5);
+            spawnRate = randomNum.Next(1, 7);
             timer = 0;
         }
 

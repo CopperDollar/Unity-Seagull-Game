@@ -28,17 +28,7 @@ public class PoopScript : MonoBehaviour
     {
         SeagullScript seagullScript = GetComponent<SeagullScript>();
 
-        if (seagullScript == null)
-        {
-            Debug.Log("seagullScrip not found");
   
-        }
-
-        if (seagullScript != null)
-        {
-            Debug.Log("seagullScript found");
-            newPoop = seagullScript.newPoop;
-        }
 
 
     }
@@ -49,16 +39,16 @@ public class PoopScript : MonoBehaviour
 
 
 
-        if (newPoop == null)
-        {
+        //if (newPoop == null)
+        //{
         Debug.Log("newPoop is null");
-        }
+        //}
 
-        if (newPoop != null && newPoop.transform.position.y < deadZone)
-        {
+        //if (newPoop != null && newPoop.transform.position.y < deadZone)
+        //{
 
-            Destroy(newPoop);
-        }
+          //  Destroy(newPoop);
+        //}
 
 
 
