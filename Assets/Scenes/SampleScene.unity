@@ -404,6 +404,56 @@ CapsuleCollider2D:
   m_Offset: {x: -0.036239292, y: 0.068452}
   m_Size: {x: 1.6542525, y: 0.7498305}
   m_Direction: 1
+--- !u!4 &693191582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2190416357575475850, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
+  m_PrefabInstance: {fileID: 1064350374775069832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &732822018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732822019}
+  - component: {fileID: 732822020}
+  m_Layer: 0
+  m_Name: PoopGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &732822019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732822018}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3, y: -0.3, z: -0.02550694}
+  m_LocalScale: {x: 0.647355, y: 0.647355, z: 0.647355}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693191582}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732822020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732822018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c266c493998a3749a9d50ee13b319a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
 --- !u!1001 &937792339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,6 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053949448}
   - component: {fileID: 1053949449}
+  - component: {fileID: 1053949450}
   m_Layer: 5
   m_Name: Poop Meter
   m_TagString: Poop Meter
@@ -562,6 +613,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1053949450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053949447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5060fa9eb88eb244ab7267c78ae1d89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poopMeter: {fileID: 0}
+  maxPoop: 0
+  currentPoop: 0
 --- !u!1 &1259068923
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +888,7 @@ Transform:
   m_GameObject: {fileID: 1370628463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.87, y: -2.95, z: 0.016739223}
+  m_LocalPosition: {x: 15.87, y: -2.77, z: 0.016739223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -843,6 +909,13 @@ MonoBehaviour:
   redShirtBoy: {fileID: 1480825660227265461, guid: d8772ae3515cda141a6bf8eda9d051f0, type: 3}
   messyHairBoy: {fileID: 3678827500946595953, guid: 27c012b0159808149882d70065a8ea1a, type: 3}
   redShirtChild: {fileID: 6695093301050679714, guid: bb8d49cb5e8dbea42bfdf4f1513a2bbc, type: 3}
+  blueShirtChild: {fileID: 5880105302720928499, guid: fd4c6bc09119ea64e92b656bb7bdc4a8, type: 3}
+  blueShirtGirl: {fileID: 6268482063578818578, guid: 8e03301bf5eafed49a5acb0d8cf94fa8, type: 3}
+  greyShirtBoy: {fileID: 5444643137920931937, guid: e3e50187e8eead644b61eb506c8f7f7f, type: 3}
+  pinkHairGirl: {fileID: 2608345383259824073, guid: f0248ed18862e714d89ba47e933035de, type: 3}
+  greenCapBoy: {fileID: 4802600795852681837, guid: 85dab91ad94026d4586900b6926e850d, type: 3}
+  tuxedoMan: {fileID: 6091300080127148721, guid: e9905afd007682445838e190e08921fb, type: 3}
+  brownHairChild: {fileID: 3947682690069623131, guid: 09cd1b6c3f4015a4181f82a895bceed0, type: 3}
   selectedCharacter: {fileID: 0}
   spawnRate: 0
 --- !u!1001 &1476851460
@@ -865,26 +938,6 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: seagull
-      value: 
-      objectReference: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
-    - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: deadZone
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: poopClone
-      value: 
-      objectReference: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-    - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: poopMeter
-      value: 
-      objectReference: {fileID: 1053949449}
-    - target: {fileID: 3297477641138153397, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: myRigidbody
-      value: 
-      objectReference: {fileID: 4785012990455359616, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
     - target: {fileID: 4785012990455359616, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_GravityScale
       value: 5
@@ -1537,9 +1590,13 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4165152430193529520, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2190416357575475850, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 732822019}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 809344920282002228, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
       insertIndex: -1
