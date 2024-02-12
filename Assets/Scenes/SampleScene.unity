@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScore: 0
-  scoreText: {fileID: 1767460102}
+  scoreText: {fileID: 0}
 --- !u!4 &453500592
 Transform:
   m_ObjectHideFlags: 0
@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+  poop: {fileID: 0}
 --- !u!1001 &937792339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,6 +927,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.059750848
+      objectReference: {fileID: 0}
+    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.11902878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0039228196
+      objectReference: {fileID: 0}
+    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.01699863
+      objectReference: {fileID: 0}
     - target: {fileID: 2450014224211091768, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1082,6 +1099,7 @@ GameObject:
   - component: {fileID: 1767460101}
   - component: {fileID: 1767460103}
   - component: {fileID: 1767460102}
+  - component: {fileID: 1767460104}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -1150,6 +1168,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767460100}
   m_CullTransparentMesh: 1
+--- !u!114 &1767460104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767460100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdf641a2e0abb43be56f73542c5766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1782893671
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GeneratePoop : MonoBehaviour
 {
     public GameObject projectile;
+    public GameObject poop;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))

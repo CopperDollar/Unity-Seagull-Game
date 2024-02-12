@@ -7,7 +7,7 @@ using Random = System.Random;
 
 public class CharacterSpawnerScript : MonoBehaviour
 {
-    static List<GameObject> characterList = new List<GameObject>();
+    public static List<GameObject> characterList = new List<GameObject>();
     int characterListSize;
    // public randomCharacter;
     public GameObject redShirtBoy;
