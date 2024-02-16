@@ -7,8 +7,20 @@ using Random = System.Random;
 
 public class CarSpawnerScript : MonoBehaviour
 {
-    public GameObject car;
+
+    public static List<GameObject> carList = new List<GameObject>();
+    int carListSize;
+
+    public GameObject redCar;
+    public GameObject blueVan;
+    public GameObject blackCar;
+    public GameObject greenVan;
+    public GameObject blackVan;
+
+    public GameObject selectedCar;
+
     Random randomNum = new Random();
+    System.Random randomCar = new System.Random();
 
     public int spawnRate;
     private float timer = 0;
@@ -21,7 +33,14 @@ public class CarSpawnerScript : MonoBehaviour
     {
         
         spawnRate = randomNum.Next(3, 10);
-        spawnCar();
+
+        carList.Add(redCar);
+        carList.Add(blueVan);
+        carList.Add(blackCar);
+        carList.Add(greenVan);
+        carList.Add(blackVan);
+        carListSize = carList.Count;
+        //spawnCar();
     }
 
 
@@ -36,19 +55,23 @@ public class CarSpawnerScript : MonoBehaviour
         else
         {
 
-            spawnCar();
+            SpawnRandomCar();
             spawnRate = randomNum.Next(3, 10);
             timer = 0;
         }
 
 
     }
-    void spawnCar()
+    void SpawnRandomCar()
     {
        
-        Instantiate(car, transform.position, transform.rotation);
+        int randomIndex = randomCar.Next(0, carListSize);
+        selectedCar = carList[randomIndex];
+        Instantiate(selectedCar, transform.position, transform.rotation);
+     }
         
-    }
+        
+    
 
 
 }
