@@ -44,4 +44,18 @@ public class PoopMeterManager : MonoBehaviour
     {
         poopMeter.value = Convert.ToInt32(currentPoop);
     }
+
+    public bool CheckIfEmpty()
+    {
+        if (poopMeter.value == 0)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
+
 }

@@ -11,8 +11,18 @@ public class GeneratePoop : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            GameObject poop = Instantiate(projectile, transform.position, transform.rotation);
-            PoopMeterManager.instance.DecreasePoop();
+            if (PoopMeterManager.instance.CheckIfEmpty() == false)
+            {
+                GameObject poop = Instantiate(projectile, transform.position, transform.rotation);
+                PoopMeterManager.instance.DecreasePoop();
+            }
+
+            else
+            {
+                Debug.Log("kakkaa ei ole jäljellä");
+            }
+            
+
         }
     }
 }
