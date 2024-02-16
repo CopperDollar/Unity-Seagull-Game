@@ -9,7 +9,7 @@ public class CharacterSpawnerScript : MonoBehaviour
 {
     public static List<GameObject> characterList = new List<GameObject>();
     int characterListSize;
-   // public randomCharacter;
+   
     public GameObject redShirtBoy;
     public GameObject messyHairBoy;
     public GameObject redShirtChild;
