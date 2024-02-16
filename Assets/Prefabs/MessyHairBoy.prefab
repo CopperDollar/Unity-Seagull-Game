@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 523676347708431245}
   - component: {fileID: 6777649380057633579}
   - component: {fileID: 4207380006172551136}
-  - component: {fileID: 6553561046166450215}
   m_Layer: 7
   m_Name: MessyHairBoy
   m_TagString: Walker
@@ -168,30 +167,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10939834, y: 0.19779995}
   m_EdgeRadius: 0
---- !u!50 &6553561046166450215
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3678827500946595953}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
