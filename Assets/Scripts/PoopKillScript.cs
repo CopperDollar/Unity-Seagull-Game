@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KillScript : MonoBehaviour
 {
-    
+
 
     public float deadZone = -5;
 

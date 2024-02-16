@@ -5,16 +5,19 @@ using UnityEngine;
 public class DetectCollisionScript : MonoBehaviour
 {
 
-    public GameObject walker;
 
 
-  private void OnCollisionEnter(Collision collision)
-  {
-        if (collision.gameObject.tag == "Walker")
-       {
-            Debug.Log("Osuma!");
-            //PointCounter.instance.addScore();
-       }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Walker"))
+        {
+ 
+            PointCounter.instance.addScore();
+        }
 
+        if (other.gameObject.CompareTag("Car"))
+        {
+            PointCounter.instance.addScore();
+        }
     }
 }

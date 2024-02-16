@@ -171,7 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bdf641a2e0abb43be56f73542c5766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
   scoreText: {fileID: 0}
 --- !u!4 &453500592
 Transform:
@@ -943,6 +942,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.01699863
       objectReference: {fileID: 0}
+    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2450014224211091768, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1007,7 +1010,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Poop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 6603864471622914877, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
     m_AddedGameObjects: []
@@ -1180,8 +1184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bdf641a2e0abb43be56f73542c5766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1767460102}
 --- !u!1 &1782893671
 GameObject:
   m_ObjectHideFlags: 0

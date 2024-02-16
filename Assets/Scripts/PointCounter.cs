@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PointCounter : MonoBehaviour
 {
-    public int playerScore;
+
     public Text scoreText;
+    int score = 0;
     public static PointCounter instance;
 
 
-    //[ContextMenu("Increase Score")]
 
     private void Awake()
     {
@@ -19,15 +19,15 @@ public class PointCounter : MonoBehaviour
 
     private void Start()
     {
+        scoreText.text = score.ToString();
 
-        //scoreText = GetComponent<Text>();
 
     }
 
 
     public void addScore()
     {
-        playerScore += 1;
-        scoreText.text = playerScore.ToString();
+        score += 1;
+        scoreText.text = score.ToString();
     }
 }
