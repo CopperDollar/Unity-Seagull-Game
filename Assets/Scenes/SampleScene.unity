@@ -839,6 +839,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2171983269903762086, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171983269903762086, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -882,6 +890,10 @@ PrefabInstance:
     - target: {fileID: 5198746548982270100, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535378714599384439, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_Name
