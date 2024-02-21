@@ -12,6 +12,7 @@ public class KillScript : MonoBehaviour
     {
         if (transform.position.y < deadZone)
         {
+
             Destroy(gameObject);
             //PoopMeterManager.instance.IncreasePoop(); //Kutsutaan poopmetermanageria. Koska se on static instance, sitä voidaan kutsua ilman sen ihmeempiä kiertelyitä.
         }

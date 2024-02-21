@@ -840,40 +840,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_Size.x
-      value: 0.059750848
-      objectReference: {fileID: 0}
-    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_Size.y
-      value: 0.11902878
-      objectReference: {fileID: 0}
-    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0039228196
-      objectReference: {fileID: 0}
-    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.01699863
-      objectReference: {fileID: 0}
-    - target: {fileID: 2266930371472488347, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2450014224211091768, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -676949495, guid: 7cf316894e4413547bff06747aeb9f9c, type: 3}
-    - target: {fileID: 2450014224211091768, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2450014224211091768, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785012990455359616, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_GravityScale
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5198746548982270100, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -919,14 +887,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poop
       objectReference: {fileID: 0}
-    - target: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
-      propertyPath: m_TagString
-      value: Poop
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    m_RemovedGameObjects:
-    - {fileID: 6603864471622914877, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
@@ -1408,7 +1370,7 @@ MonoBehaviour:
   blueVan: {fileID: 1542477238035620549, guid: 6192f27083afa594f9fbd5ce4f2726f0, type: 3}
   blackCar: {fileID: 8757666396707976850, guid: 05fff397aa2244748a81d80a57fb7a1c, type: 3}
   greenVan: {fileID: 558614248300576658, guid: 7e62d97cd2948bc46a92e35e0eeb0731, type: 3}
-  blackVan: {fileID: 0}
+  blackVan: {fileID: 5121622643388157923, guid: bd359554c68cc664e9ca77ccd46598f4, type: 3}
   selectedCar: {fileID: 0}
   spawnRate: 3
 --- !u!1 &1976930054
