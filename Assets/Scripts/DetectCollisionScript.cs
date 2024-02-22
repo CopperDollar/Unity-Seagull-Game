@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class DetectCollisionScript : MonoBehaviour
 {
 
-    private ParticleSystem burst;
+
+
     private AudioSource poopSound;
 
     void Start()
     {
+
+
         poopSound = GetComponent<AudioSource>();
-        burst = GetComponent<ParticleSystem>();
-        if (burst == null)
-        {
-            Debug.LogError("burst effect not found!");
-        }
+
 
 
 
@@ -28,7 +28,7 @@ public class DetectCollisionScript : MonoBehaviour
         {
  
             PointCounter.instance.addScore();
-            BurstPoop();
+   
             PlayPoopSound();
             Destroy(gameObject);
         }
@@ -36,25 +36,20 @@ public class DetectCollisionScript : MonoBehaviour
         if (other.gameObject.CompareTag("Car"))
         {
             PointCounter.instance.addScore();
-            BurstPoop();
+ 
             PlayPoopSound();
             Destroy(gameObject);
         }
     }
 
-    void BurstPoop()
-    {
-        burst.transform.position = gameObject.transform.position;
-        burst.Play();
-    }
+
 
     void PlayPoopSound()
     {
-        if (poopSound != null)
-        {
-            Debug.Log("poopsound ei ole null");
-            poopSound.Play();
-        }
 
+     poopSound.Play();
+     
     }
+
+    
 }

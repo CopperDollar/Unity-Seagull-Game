@@ -9,6 +9,7 @@ TagManager:
   - Seagull
   - Poop Meter
   - Walker
+  - BurstGenerator
   layers:
   - Default
   - TransparentFX

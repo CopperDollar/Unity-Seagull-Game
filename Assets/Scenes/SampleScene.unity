@@ -557,7 +557,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 63e973a4bf6ce184e9a7999350c30b37, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -942,7 +942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2171983269903762086, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2171983269903762086, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: CollisionModule.enabled
@@ -1020,8 +1020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2171983269903762086, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+    - {fileID: 7535378714599384439, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 2324038191015064627, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9173154880264481952, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}

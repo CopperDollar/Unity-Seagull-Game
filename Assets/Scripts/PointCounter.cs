@@ -14,20 +14,31 @@ public class PointCounter : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+
+        if (scoreText == null)
+        {
+            scoreText.text = score.ToString();
+
+            
+        }
+
+
+
         
     }
 
-    private void Start()
-    {
-        scoreText.text = score.ToString();
+
+            
+        
 
 
-    }
 
 
     public void addScore()
     {
         score += 1;
         scoreText.text = score.ToString();
+
     }
 }
