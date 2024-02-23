@@ -848,6 +848,50 @@ PrefabInstance:
       propertyPath: burst
       value: 
       objectReference: {fileID: 1127659711}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9530872
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9530872
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.99371064
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584408900017428730, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233326014514441507, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
+      propertyPath: m_MinParticleSize
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5198746548982270100, guid: ed0f2d0a0666771499e907b1bd95458f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30

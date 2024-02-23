@@ -30,7 +30,7 @@ public class DetectCollisionScript : MonoBehaviour
             PointCounter.instance.addScore();
 
             //PlayPoopSound();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (other.gameObject.CompareTag("Car"))
@@ -38,7 +38,7 @@ public class DetectCollisionScript : MonoBehaviour
             PointCounter.instance.addScore();
 
             //PlayPoopSound();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
