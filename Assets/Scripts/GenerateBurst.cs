@@ -20,23 +20,23 @@ public class GenerateBurst : MonoBehaviour
         
         if (other.gameObject.CompareTag("Walker"))
         {
-            Debug.Log("kakka osui johonkin");
-            BurstPoop();
+
+            Debug.Log("kakka osui ihmiseen");
+            burst.Play();
+            //Instantiate(burst, transform.position, transform.rotation);
+   
+            
 
         }
 
         if (other.gameObject.CompareTag("Car"))
         {
-            Debug.Log("kakka osui johonkin");
-            BurstPoop();
+
+            Debug.Log("kakka osui autoon");
+            //burst.Play();
+            Instantiate(burst, transform.position, transform.rotation);
 
         }
     }
 
-    void BurstPoop()
-    {
-
-    burst.Play();
-
-    }
 }
