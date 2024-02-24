@@ -25,7 +25,7 @@ public class GenerateBurst : MonoBehaviour
 
             Debug.Log("kakka osui ihmiseen");
             burst.Play();
-            //Instantiate(burst, transform.position, transform.rotation);
+
    
             
 
@@ -36,7 +36,7 @@ public class GenerateBurst : MonoBehaviour
 
             Debug.Log("kakka osui autoon");
             burst.Play();
-            //Instantiate(burst, transform.position, transform.rotation);
+
 
         }
     }

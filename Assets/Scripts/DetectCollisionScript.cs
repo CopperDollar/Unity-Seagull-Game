@@ -14,7 +14,7 @@ public class DetectCollisionScript : MonoBehaviour
     {
 
 
-        //poopSound = GetComponent<AudioSource>();
+        poopSound = GetComponent<AudioSource>();
 
 
 
@@ -28,27 +28,21 @@ public class DetectCollisionScript : MonoBehaviour
         {
  
             PointCounter.instance.addScore();
-
-            //PlayPoopSound();
-            //Destroy(gameObject);
+            poopSound.Play();
+            Destroy(gameObject, 0.1f);
         }
 
         if (other.gameObject.CompareTag("Car"))
         {
             PointCounter.instance.addScore();
-
-            //PlayPoopSound();
-            //Destroy(gameObject);
+            poopSound.Play();
+            Destroy(gameObject, 0.1f);
         }
     }
 
 
 
-    //void PlayPoopSound()
-    //{
-    // poopSound.Play();
 
-    // }
 
 
 }
