@@ -7,15 +7,16 @@ public class DetectCollisionScript : MonoBehaviour
 {
 
 
-
+    private Renderer poop;
     private AudioSource poopSound;
+    private Rigidbody2D rb;
 
     void Start()
     {
 
-
+        poop = GetComponent<Renderer>();
         poopSound = GetComponent<AudioSource>();
-
+        rb = GetComponent<Rigidbody2D>();
 
 
 
@@ -26,17 +27,23 @@ public class DetectCollisionScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Walker"))
         {
- 
+
+      
+            poop.enabled = false;
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
             PointCounter.instance.addScore();
             poopSound.Play();
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject, 0.4f);
         }
 
         if (other.gameObject.CompareTag("Car"))
         {
+            
+            poop.enabled = false;
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
             PointCounter.instance.addScore();
             poopSound.Play();
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject, 0.4f);
         }
     }
 
