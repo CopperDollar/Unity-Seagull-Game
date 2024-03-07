@@ -389,6 +389,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2190416357575475850, guid: 3042ea5ea139f084aaeef3319ab78eef, type: 3}
   m_PrefabInstance: {fileID: 1064350374775069832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &727720816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727720818}
+  - component: {fileID: 727720817}
+  m_Layer: 0
+  m_Name: Food Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &727720817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727720816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e870513a550114d9c5772d26a1e21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apple: {fileID: 6334254114950485872, guid: 97a269af33f7cb04ab947e0733f6b3a7, type: 3}
+  orange: {fileID: 3457536687510914535, guid: 6a3eb64b33418b244b5865350d552484, type: 3}
+  pineapple: {fileID: 8568287164830624710, guid: 4452e69738acc31479bf68df26ef7f3c, type: 3}
+  selectedFood: {fileID: 0}
+  spawnRate: 0
+--- !u!4 &727720818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727720816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.71, y: -3.03, z: -0.10246349}
+  m_LocalScale: {x: 0.61905426, y: 0.61905426, z: 0.61905426}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &732822018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,3 +1517,4 @@ SceneRoots:
   - {fileID: 1782893675}
   - {fileID: 1976930057}
   - {fileID: 453500592}
+  - {fileID: 727720818}
