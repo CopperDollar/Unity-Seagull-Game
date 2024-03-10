@@ -34,11 +34,11 @@ public class PoopMeterManager : MonoBehaviour
         SetPoopAmount();
     }
 
-   // public void IncreasePoop()
-   // {
-     //   currentPoop += 1;
-       // SetPoopAmount();
-   // }
+   public void IncreasePoop()
+   {
+        currentPoop = maxPoop;
+        SetPoopAmount();
+   }
 
     public void SetPoopAmount()
     {
