@@ -18,6 +18,13 @@ public class FoodSpawnerScript : MonoBehaviour
 
     public int spawnRate;
     private float timer = 0;
+
+    float posX;
+    float posY;
+
+
+    Vector2 pos;
+
     void Start()
     {
         spawnRate = randomNum.Next(3, 5);
@@ -46,8 +53,11 @@ public class FoodSpawnerScript : MonoBehaviour
 
     void SpawnRandomFood()
     {
+        posY = randomNum.Next(-3, 4);
+        posX = 10.71f;
+        pos = new Vector2(posX, posY);
         int randomIndex = randomFood.Next(0, foodListSize);
         selectedFood = foodList[randomIndex];
-        Instantiate(selectedFood, transform.position, transform.rotation);
+        Instantiate(selectedFood, pos, Quaternion.identity);
     }
 }
