@@ -27,8 +27,8 @@ public class FoodSpawnerScript : MonoBehaviour
     {
         spawnRate = randomNum.Next(3, 5);
         foodList.Add(apple);
-        foodList.Add(orange);
-        foodList.Add(pineapple);
+        //foodList.Add(orange);
+        //foodList.Add(pineapple);
 
         foodListSize = foodList.Count;
     }
