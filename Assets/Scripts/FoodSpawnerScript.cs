@@ -21,8 +21,6 @@ public class FoodSpawnerScript : MonoBehaviour
 
     float posX;
     float posY;
-
-
     Vector2 pos;
 
     void Start()
@@ -46,7 +44,7 @@ public class FoodSpawnerScript : MonoBehaviour
         {
 
             SpawnRandomFood();
-            spawnRate = randomNum.Next(20, 40);
+            spawnRate = randomNum.Next(3, 5);
             timer = 0;
         }
     }
