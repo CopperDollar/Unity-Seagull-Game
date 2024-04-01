@@ -25,10 +25,10 @@ public class FoodSpawnerScript : MonoBehaviour
 
     void Start()
     {
-        spawnRate = randomNum.Next(3, 5);
+        spawnRate = randomNum.Next(2, 4);
         foodList.Add(apple);
-        //foodList.Add(orange);
-        //foodList.Add(pineapple);
+        foodList.Add(orange);
+        foodList.Add(pineapple);
 
         foodListSize = foodList.Count;
     }

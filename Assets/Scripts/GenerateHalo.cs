@@ -21,14 +21,18 @@ public class GenerateHalo : MonoBehaviour
     void Update()
     {
 
-     if (Input.GetKeyDown(KeyCode.H))
-        {
-            halo.Play();
-        }
+     //PlayHaloEffect();
+
+     }
 
       
     
     
+    
+
+    void PlayHaloEffect()
+    {
+        halo.Play();
     }
 
 

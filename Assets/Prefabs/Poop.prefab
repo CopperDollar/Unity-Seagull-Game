@@ -5018,6 +5018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740659d94590fe048954d33f4fdf7228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splatSound: {fileID: 0}
 --- !u!70 &2266930371472488347
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5090,7 +5091,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63e973a4bf6ce184e9a7999350c30b37, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0e2fe6c884cad1c448a4a4a607557f5b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

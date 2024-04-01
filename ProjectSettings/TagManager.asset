@@ -10,6 +10,9 @@ TagManager:
   - Poop Meter
   - Walker
   - BurstGenerator
+  - Orange
+  - Apple
+  - Pineapple
   layers:
   - Default
   - TransparentFX
